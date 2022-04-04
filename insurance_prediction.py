@@ -6,11 +6,11 @@ def main():
     html_temp = """
     <div style="background-color:brown;padding:16px">
     <h2 style="color:white";text-align:center> Health Insurance Cost Prediction </h2>
-    :hospital: :heavy_dollar_sign:
     </div>
-    
+   
     """
-    
+    :hospital: :heavy_dollar_sign:
+                    
     st.markdown(html_temp,unsafe_allow_html=True)
     
     model = joblib.load('model_joblib_gr')
