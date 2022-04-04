@@ -5,7 +5,8 @@ import numpy as np
 def main():
     html_temp = """
     <div style="background-color:brown;padding:16px">
-    <h2 style="color:white";text-align:center> Health Insurance Cost Prediction :hospital: :heavy_dollar_sign:</h2>
+    <h2 style="color:white";text-align:center> Health Insurance Cost Prediction </h2>
+    :hospital: :heavy_dollar_sign:
     </div>
     
     """
@@ -14,7 +15,7 @@ def main():
     
     model = joblib.load('model_joblib_gr')
     
-    st.write('This webapp will predict the cost of health insurance you prefer.')
+    st.subheader('This web app will predict the cost of health insurance according to certain classes. Data set used is a continuous dependent variable with 1,338 info. The model applied to this activity is Gradient Boosting Regression.')
     
     p1 = st.slider('Enter Your Age',18,100)
     
