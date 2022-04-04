@@ -3,15 +3,8 @@ import joblib
 import numpy as np
 
 def main():
-    html_temp = """
-    <div style="background-color:brown;padding:16px">
-    <h2 style="color:white";text-align:center> Health Insurance Cost Prediction </h2>
-    </div>
-   
-    """
-    :hospital: :heavy_dollar_sign:
-                    
-    st.markdown(html_temp,unsafe_allow_html=True)
+
+    st.title("Health Insurance Cost Prediction<font color='Blueblack'><:hospital:>", unsafe_allow_html=True)
     
     model = joblib.load('model_joblib_gr')
     
