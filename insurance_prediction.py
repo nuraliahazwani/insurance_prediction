@@ -4,8 +4,8 @@ import numpy as np
 
 def main():
     html_temp = """
-    <div style="background-color:lightpink;padding:16px">
-    <h2 style="color:black";text-align:center> Health Insurance Cost Prediction Using ML</h2>
+    <div style="background-color:brown;padding:16px">
+    <h2 style="color:white";text-align:center> Health Insurance Cost Prediction Using ML</h2>
     </div>
     
     """
@@ -13,6 +13,8 @@ def main():
     st.markdown(html_temp,unsafe_allow_html=True)
     
     model = joblib.load('model_joblib_gr')
+    
+    st.write('This webapp will predict the cost of health insurance')
     
     p1 = st.slider('Enter Your Age',18,100)
     
