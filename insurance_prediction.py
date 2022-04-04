@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
     html_temp = """
-    <div style="background-color:lightblue;padding:16px">
+    <div style="background-color:lightpink;padding:16px">
     <h2 style="color:black";text-align:center> Health Insurance Cost Prediction Using ML</h2>
     </div>
     
