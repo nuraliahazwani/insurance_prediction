@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
 
-    st.markdown("""# Health Insurance Cost Prediction<br>:hospital:""", True)
+    st.markdown("""# Health Insurance Cost Prediction:hospital:""", True)
     
     model = joblib.load('model_joblib_gr')
     
@@ -36,7 +36,7 @@ def main():
         p5=0
         
         
-    p6 = st.slider("Enter Your Region",1,4)
+    p6 = st.slider("Enter Your Region. **1**:Southwest, **2**:Southeast, **3**:Northwest, **4**:Northeast",1,4)
     
     if st.button('Predict'):
         pred= model.predict([[p1,p2,p3,p4,p5,p6]])
