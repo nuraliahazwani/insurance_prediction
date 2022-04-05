@@ -4,13 +4,12 @@ import numpy as np
 
 def main():
 
-    st.title("HEALTH INSURANCE COST PREDICTION :hospital::heavy_dollar_sign")
+    st.markdown("""# HEALTH INSURANCE COST PREDICTION<br>:hospital::heavy_dollar_sign:""", True)
     
     model = joblib.load('model_joblib_gr')
     
     st.markdown("""
-    *This web app will predict the cost of health insurance according to certain classes.<br>
-    Data set used is a continuous dependent variable and the model applied to this activity is Gradient Boosting Regression.*""",True)
+    *This web app will predict the cost of health insurance according to certain classes. Data set used is a continuous dependent variable and the model applied to this activity is Gradient Boosting Regression.*""",True)
     
     p1 = st.slider('Enter Your Age',18,100)
     
