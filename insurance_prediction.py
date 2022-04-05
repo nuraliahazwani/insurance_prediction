@@ -4,8 +4,7 @@ import numpy as np
 
 def main():
 
-    st.title("HEALTH INSURANCE COST PREDICTION\n
-    :hospital::heavy_dollar_sign:")
+    st.title("HEALTH INSURANCE COST PREDICTION :hospital:")
     
     model = joblib.load('model_joblib_gr')
     
