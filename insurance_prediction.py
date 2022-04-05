@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
 
-    st.title(<*font color=‘blue’>Health Insurance Cost Prediction</*font>, unsafe_allow_html=True, :hospital: :heavy_dollar_sign:")
+    st.title("Health Insurance Cost Prediction" :hospital: :heavy_dollar_sign:)
     
     model = joblib.load('model_joblib_gr')
     
