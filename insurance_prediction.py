@@ -4,7 +4,7 @@ import numpy as np
 
 def main():
 
-    st.markdown("""# HEALTH INSURANCE COST PREDICTION<br>:hospital::heavy_dollar_sign:""", True)
+    st.markdown("""# Health Insurance Cost Prediction<br>:hospital::heavy_dollar_sign:""", True)
     
     model = joblib.load('model_joblib_gr')
     
