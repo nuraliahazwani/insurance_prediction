@@ -8,9 +8,7 @@ def main():
     
     model = joblib.load('model_joblib_gr')
     
-    st.write('*This web app will predict the cost of health insurance according to certain classes.\n
-    Data set used is a continuous dependent variable and \n
-    the model applied to this activity is Gradient Boosting Regression.*')
+    st.markdown(""" #h1 *This web app will predict the cost of health insurance according to certain classes.<br> Data set used is a continuous dependent variable and <br> the model applied to this activity is Gradient Boosting Regression.*""",True)
     
     p1 = st.slider('Enter Your Age',18,100)
     
