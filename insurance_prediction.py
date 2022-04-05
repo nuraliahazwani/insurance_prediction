@@ -34,9 +34,8 @@ def main():
         p5=1
     else:
         p5=0
-        
 
-    p6 = st.selectbox("Choose your region",("Southwest","Southeast","Northwest","Northeast"))
+    p6 = st.slider("Enter Your Region. 1:Southwest, 2:Southeast, 3:Northwest, 4:Northeast",1,4)
     
     if st.button('Predict'):
         pred= model.predict([[p1,p2,p3,p4,p5,p6]])
